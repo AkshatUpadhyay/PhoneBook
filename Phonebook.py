@@ -124,7 +124,7 @@ def Search():
         global se
         se=search.get()+key.char
         global output1
-        if key.char=='\x7f':                 #Backspace is taken according to Macintosh OS for Windows Unicode for Backspace is \x08 
+        if key.char=='\x7f':                 #Backspace value is taken according to Macintosh OS for Windows Unicode for Backspace is \x08 
             se=se[:len(se)-2]
         a=('%'+se+'%','%'+se+'%')
         print a,type(a)
